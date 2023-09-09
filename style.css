@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 20px 15px 60px 15px;
+    font-weight: bolder;
+
+}
+.container{
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns : repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(173, 239, 239);
+    border-radius: 10px;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    border: 2px solid black;
+    padding: 15px;
+    margin:2px;
+    text-align:right;
+    font-weight: bolder;
+    background-color: rgb(214, 238, 238);
+    border-radius: 10px;
+}
+.item1:hover{
+    background-color: white;
+}
+.equals{
+    grid-column: 5;
+    grid-row: 4/span 2;
+    border: 2px solid black;
+    justify-self: center;
+    padding: 50px 15px;
+    margin: 5px;
+    font-weight: bolder;
+    background-color:darkblue;
+    color: white;
+    border-radius: 10px;
+}
+.equals:hover{
+    background-color: white;
+    color: blue;
+}
+.del {
+    border: 2px solid black;
+    justify-self: center;
+    padding: 15px;
+    margin: 5px;
+    font-weight: bolder;
+    background-color: rgb(214, 238, 238);
+    border-radius: 10px;
+}
+.items{
+    display: grid;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 5px;
+    width:50px;
+    height: 60px;
+    font-weight:bolder;
+    align-self: center;
+    background-color: rgb(214, 238, 238);
+    color:darkblue;
+    border-radius: 10px;
+    
+}
+#clear{
+    background-color: red;
+    color: white;
+}
+#clear:hover{
+    background-color: antiquewhite;
+    color: brown;
+}
+#operator{
+    color: white;
+    background-color: rgb(163, 160, 160);
+}
+#operator:hover{
+    background-color:rgb(223, 223, 165);
+    color:red;
+}
+.items:hover,.del:hover{
+    background-color:rgb(223, 223, 165);
+    color:white;
+
+}
